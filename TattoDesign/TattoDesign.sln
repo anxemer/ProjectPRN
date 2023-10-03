@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TattoDesign", "TattoDesign\TattoDesign.csproj", "{FCD43F32-DBE5-43CF-A730-98BE2F59DEBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCD43F32-DBE5-43CF-A730-98BE2F59DEBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD43F32-DBE5-43CF-A730-98BE2F59DEBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD43F32-DBE5-43CF-A730-98BE2F59DEBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD43F32-DBE5-43CF-A730-98BE2F59DEBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6659038-8656-4CB0-A051-B995EDCC62F6}
+	EndGlobalSection
+EndGlobal
