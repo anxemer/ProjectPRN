@@ -1,0 +1,12 @@
+D:\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.exe.config
+D:\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.exe
+D:\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.pdb
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.AssemblyReference.cache
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Properties.Resources.resources
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.GenerateResource.cache
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CoreCompileInputs.cache
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.exe
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.pdb
+D:\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\Guna.UI2.dll
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.TattooShopping.resources
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CopyComplete

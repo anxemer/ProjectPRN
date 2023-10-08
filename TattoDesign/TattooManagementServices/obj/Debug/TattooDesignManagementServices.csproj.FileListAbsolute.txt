@@ -1,0 +1,6 @@
+D:\ProjectPRN\TattoDesign\TattooManagementServices\bin\Debug\TattooManagementServices.dll
+D:\ProjectPRN\TattoDesign\TattooManagementServices\bin\Debug\TattooManagementServices.pdb
+D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagementServices.csproj.AssemblyReference.cache
+D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagementServices.csproj.CoreCompileInputs.cache
+D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.dll
+D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.pdb
