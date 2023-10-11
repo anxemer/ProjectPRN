@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\TattoDesign",
+    "\\TattoDesign\\AnXemer",
     "\\TattooManagementObject"
   ],
-  "SelectedNode": "\\TattoDesign\\TattooShopping.cs",
+  "SelectedNode": "\\TattoDesign\\AnXemer\\TattoShopping.cs",
   "PreviewInSolutionExplorer": false
 }

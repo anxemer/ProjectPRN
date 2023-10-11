@@ -52,14 +52,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TattooShopping.cs">
+    <Compile Include="AnXemer\TattooDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TattooShopping.Designer.cs">
-      <DependentUpon>TattooShopping.cs</DependentUpon>
+    <Compile Include="AnXemer\TattooDetail.Designer.cs">
+      <DependentUpon>TattooDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnXemer\TattoShopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnXemer\TattoShopping.Designer.cs">
+      <DependentUpon>TattoShopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AnXemer\HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnXemer\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnXemer\TattooDetail.resx">
+      <DependentUpon>TattooDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnXemer\TattoShopping.resx">
+      <DependentUpon>TattoShopping.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,8 +87,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TattooShopping.resx">
-      <DependentUpon>TattooShopping.cs</DependentUpon>
+    <EmbeddedResource Include="AnXemer\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

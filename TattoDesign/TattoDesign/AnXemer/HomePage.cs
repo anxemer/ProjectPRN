@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TattoDesign
 {
-    public partial class TattooShopping : Form
+    public partial class HomePage : Form
     {
-        public TattooShopping()
+        public HomePage()
         {
             InitializeComponent();
         }

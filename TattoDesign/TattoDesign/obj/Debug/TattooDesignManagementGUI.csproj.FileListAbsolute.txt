@@ -8,5 +8,6 @@ D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj
 D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.exe
 D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.pdb
 D:\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\Guna.UI2.dll
-D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.TattooShopping.resources
 D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CopyComplete
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.AnXemer.TattoShopping.resources
+D:\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.HomePage.resources
