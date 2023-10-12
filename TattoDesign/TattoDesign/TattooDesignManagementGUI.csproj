@@ -64,6 +64,24 @@
     <Compile Include="AnXemer\TattoShopping.Designer.cs">
       <DependentUpon>TattoShopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="MinhHien\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinhHien\Order.designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinhHien\OrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinhHien\OrderDetails.designer.cs">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinhHien\Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinhHien\Staff.designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AnXemer\HomePage.cs">
@@ -77,6 +95,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnXemer\TattoShopping.resx">
       <DependentUpon>TattoShopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinhHien\Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinhHien\OrderDetails.resx">
+      <DependentUpon>OrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinhHien\Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
