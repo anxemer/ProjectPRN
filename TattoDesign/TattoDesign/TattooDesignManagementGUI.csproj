@@ -64,6 +64,30 @@
     <Compile Include="AnXemer\TattoShopping.Designer.cs">
       <DependentUpon>TattoShopping.cs</DependentUpon>
     </Compile>
+    <Compile Include="Doanh\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanh\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh\Register.designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanh\StaffBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh\StaffBooking.designer.cs">
+      <DependentUpon>StaffBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doanh\StaffInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doanh\StaffInfo.designer.cs">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MinhHien\Order.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +119,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnXemer\TattoShopping.resx">
       <DependentUpon>TattoShopping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh\StaffBooking.resx">
+      <DependentUpon>StaffBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doanh\StaffInfo.resx">
+      <DependentUpon>StaffInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MinhHien\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
