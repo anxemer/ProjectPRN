@@ -28,3 +28,24 @@ E:\FPT\Semester5\PRN211\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign
 E:\FPT\Semester5\PRN211\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.pdb
 E:\FPT\Semester5\PRN211\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\Guna.UI2.dll
 E:\FPT\Semester5\PRN211\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CopyComplete
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.exe.config
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.exe
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\TattoDesign.pdb
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\bin\Debug\Guna.UI2.dll
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.AssemblyReference.cache
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.AnXemer.TattooDetail.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.AnXemer.TattoShopping.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Login.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Register.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.staffbooking.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.StaffInfo.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Order.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.OrderDetails.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Staff.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.Properties.Resources.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.HomePage.resources
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.GenerateResource.cache
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CoreCompileInputs.cache
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattooDesignManagementGUI.csproj.CopyComplete
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.exe
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattoDesign\obj\Debug\TattoDesign.pdb

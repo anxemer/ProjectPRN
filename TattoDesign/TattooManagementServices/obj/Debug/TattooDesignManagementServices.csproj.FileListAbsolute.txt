@@ -4,3 +4,9 @@ D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagem
 D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagementServices.csproj.CoreCompileInputs.cache
 D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.dll
 D:\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.pdb
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\bin\Debug\TattooManagementServices.dll
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\bin\Debug\TattooManagementServices.pdb
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagementServices.csproj.AssemblyReference.cache
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooDesignManagementServices.csproj.CoreCompileInputs.cache
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.dll
+D:\Chuyên ngành 5\PRN211\ASM\test\ProjectPRN\TattoDesign\TattooManagementServices\obj\Debug\TattooManagementServices.pdb

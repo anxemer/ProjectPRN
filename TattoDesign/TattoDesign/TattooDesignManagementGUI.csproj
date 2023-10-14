@@ -88,6 +88,30 @@
     <Compile Include="Doanh\StaffInfo.designer.cs">
       <DependentUpon>StaffInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Long\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long\Admin.designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Long\BookingManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long\BookingManager.designer.cs">
+      <DependentUpon>BookingManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Long\StaffManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long\StaffManager.designer.cs">
+      <DependentUpon>StaffManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Long\TattooManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long\TattooManager.designer.cs">
+      <DependentUpon>TattooManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="MinhHien\Order.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +156,18 @@
     <EmbeddedResource Include="Doanh\StaffInfo.resx">
       <DependentUpon>StaffInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Long\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Long\BookingManager.resx">
+      <DependentUpon>BookingManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Long\StaffManager.resx">
+      <DependentUpon>StaffManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Long\TattooManager.resx">
+      <DependentUpon>TattooManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MinhHien\Order.resx">
       <DependentUpon>Order.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,5 +203,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
