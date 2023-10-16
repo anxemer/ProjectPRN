@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(staffbooking));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -42,43 +43,51 @@
             this.richTextBox19 = new System.Windows.Forms.RichTextBox();
             this.richTextBox20 = new System.Windows.Forms.RichTextBox();
             this.richTextBox21 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox22 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox23 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox24 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox25 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_Order = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.guna2TextBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.guna2HtmlLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 80);
+            this.panel1.Size = new System.Drawing.Size(800, 114);
             this.panel1.TabIndex = 1;
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(303, 27);
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(128, 12);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(140, 26);
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Staff Booking";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tableLayoutPanel1.Controls.Add(this.comboBox3, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox3, 2, 0);
@@ -90,10 +99,8 @@
             this.tableLayoutPanel1.Controls.Add(this.richTextBox19, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox20, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox21, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox22, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox23, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox24, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox25, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cb_Order, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 120);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -102,8 +109,10 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(741, 211);
             this.tableLayoutPanel1.TabIndex = 2;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // richTextBox1
             // 
@@ -193,49 +202,101 @@
             this.richTextBox21.TabIndex = 0;
             this.richTextBox21.Text = "1";
             // 
-            // richTextBox22
-            // 
-            this.richTextBox22.Location = new System.Drawing.Point(3, 44);
-            this.richTextBox22.Name = "richTextBox22";
-            this.richTextBox22.Size = new System.Drawing.Size(100, 33);
-            this.richTextBox22.TabIndex = 0;
-            this.richTextBox22.Text = "1";
-            // 
-            // richTextBox23
-            // 
-            this.richTextBox23.Location = new System.Drawing.Point(3, 89);
-            this.richTextBox23.Name = "richTextBox23";
-            this.richTextBox23.Size = new System.Drawing.Size(100, 33);
-            this.richTextBox23.TabIndex = 0;
-            this.richTextBox23.Text = "2";
-            // 
-            // richTextBox24
-            // 
-            this.richTextBox24.Location = new System.Drawing.Point(3, 130);
-            this.richTextBox24.Name = "richTextBox24";
-            this.richTextBox24.Size = new System.Drawing.Size(100, 33);
-            this.richTextBox24.TabIndex = 0;
-            this.richTextBox24.Text = "3";
-            // 
-            // richTextBox25
-            // 
-            this.richTextBox25.Location = new System.Drawing.Point(3, 175);
-            this.richTextBox25.Name = "richTextBox25";
-            this.richTextBox25.Size = new System.Drawing.Size(100, 33);
-            this.richTextBox25.TabIndex = 0;
-            this.richTextBox25.Text = "4";
-            // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.Silver;
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(328, 355);
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(321, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 42);
             this.button1.TabIndex = 4;
             this.button1.Text = "Accept ";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(123, 110);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // cb_Order
+            // 
+            this.cb_Order.FormattingEnabled = true;
+            this.cb_Order.Items.AddRange(new object[] {
+            "Total $",
+            "Customer",
+            "Date"});
+            this.cb_Order.Location = new System.Drawing.Point(3, 44);
+            this.cb_Order.Name = "cb_Order";
+            this.cb_Order.Size = new System.Drawing.Size(121, 21);
+            this.cb_Order.TabIndex = 3;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Total $",
+            "Customer",
+            "Date"});
+            this.comboBox1.Location = new System.Drawing.Point(3, 175);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 4;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Total $",
+            "Customer",
+            "Date"});
+            this.comboBox2.Location = new System.Drawing.Point(3, 89);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 5;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Total $",
+            "Customer",
+            "Date"});
+            this.comboBox3.Location = new System.Drawing.Point(3, 130);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 5;
+            // 
+            // guna2TextBox2
+            // 
+            this.guna2TextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2TextBox2.BorderRadius = 20;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "Search Staff";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconLeft")));
+            this.guna2TextBox2.IconLeftSize = new System.Drawing.Size(35, 35);
+            this.guna2TextBox2.Location = new System.Drawing.Point(425, 12);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(364, 39);
+            this.guna2TextBox2.TabIndex = 7;
             // 
             // staffbooking
             // 
@@ -250,6 +311,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,10 +332,12 @@
         private System.Windows.Forms.RichTextBox richTextBox19;
         private System.Windows.Forms.RichTextBox richTextBox20;
         private System.Windows.Forms.RichTextBox richTextBox21;
-        private System.Windows.Forms.RichTextBox richTextBox22;
-        private System.Windows.Forms.RichTextBox richTextBox23;
-        private System.Windows.Forms.RichTextBox richTextBox24;
-        private System.Windows.Forms.RichTextBox richTextBox25;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cb_Order;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
     }
 }
