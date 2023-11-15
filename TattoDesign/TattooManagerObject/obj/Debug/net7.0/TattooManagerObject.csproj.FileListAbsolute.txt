@@ -1,0 +1,14 @@
+D:\ProjectPRN\TattoDesign\TattooManagerObject\bin\Debug\net7.0\TattooManagerObject.deps.json
+D:\ProjectPRN\TattoDesign\TattooManagerObject\bin\Debug\net7.0\TattooManagerObject.runtimeconfig.json
+D:\ProjectPRN\TattoDesign\TattooManagerObject\bin\Debug\net7.0\TattooManagerObject.dll
+D:\ProjectPRN\TattoDesign\TattooManagerObject\bin\Debug\net7.0\TattooManagerObject.pdb
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.csproj.AssemblyReference.cache
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.AssemblyInfoInputs.cache
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.AssemblyInfo.cs
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.csproj.CoreCompileInputs.cache
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.dll
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\refint\TattooManagerObject.dll
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.pdb
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\TattooManagerObject.genruntimeconfig.cache
+D:\ProjectPRN\TattoDesign\TattooManagerObject\obj\Debug\net7.0\ref\TattooManagerObject.dll

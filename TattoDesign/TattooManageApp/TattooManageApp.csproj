@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TattooManagerObject\TattooManagerObject.csproj" />
+    <ProjectReference Include="..\TattooManagerService\TattooManagerService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AnXemer\HomePage.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AnXemer\HomePage.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="AnXemer\TattooDetail.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AnXemer\TattooDetail.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="AnXemer\TattoShopping.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AnXemer\TattoShopping.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Doanh\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Doanh\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Doanh\StaffBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Doanh\StaffInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Long\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Long\BookingManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Long\StaffManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Long\TattooManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MinhHien\Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MinhHien\OrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MinhHien\Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AnXemer\HomePage.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AnXemer\TattooDetail.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AnXemer\TattoShopping.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

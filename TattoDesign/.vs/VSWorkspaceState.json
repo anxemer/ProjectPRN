@@ -1,10 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TattoDesign",
-    "\\TattoDesign\\AnXemer",
-    "\\TattooManagementObject"
+    "\\TattooManageApp",
+    "\\TattooManageApp\\AnXemer",
+    "\\TattooManageApp\\Doanh",
+    "\\TattooManageApp\\Long",
+    "\\TattooManageApp\\MinhHien",
+    "\\TattooManagerDAO",
+    "\\TattooManagerObject"
   ],
-  "SelectedNode": "\\TattooManagementObject\\Class1.cs",
+  "SelectedNode": "\\TattooManageApp\\Doanh\\StaffBooking.cs",
   "PreviewInSolutionExplorer": false
 }
