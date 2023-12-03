@@ -27,12 +27,18 @@ namespace TattooManagerDAO
         public List<Cart> getCartByUserId(int id)
         {
             var dbContext = new TattooshopContext();
-            return dbContext.Carts.Where(c => c.UserId == id).ToList();
+            return dbContext.Carts.Where(c => c.UserId.Equals(id)).ToList();
         }
         public void AddCart(Cart cart)
         {
             var dbContext = new TattooshopContext();
             dbContext.Carts.Add(cart);
+            dbContext.SaveChanges();
+        }
+        public void removeCart(Cart cart)
+        {
+            var dbContext = new TattooshopContext();
+            dbContext.Carts.Remove(cart);
             dbContext.SaveChanges();
         }
     }

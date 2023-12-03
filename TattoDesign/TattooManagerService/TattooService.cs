@@ -35,5 +35,26 @@ namespace TattooManagerService
         {
             return imageRepository.geTattooByName(name);
         }
+        public void UpdateTattoo(TattooImg tattoo, int id)
+        {
+            imageRepository.UpdateTattoo(tattoo, id);
+        }
+        public void AddTatoo(TattooImg newtattoo)
+        {
+            imageRepository.AddTattoo(newtattoo);
+        }
+
+        public void DeleteTattoo(int id)
+        {
+            imageRepository.RemoveTattoo(id);
+
+
+        }
+        public List<CategoryTattoo> GetAllCate()
+        {
+            return imageRepository.GetAllCate();
+        }
+
+
     }
 }

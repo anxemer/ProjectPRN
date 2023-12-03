@@ -7,12 +7,10 @@ D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.R
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.staffbooking.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.StaffInfo.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.Admin.resources
-D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.BookingManager.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.StaffManager.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.TattooManager.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.Order.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.OrderDetails.resources
-D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.Staff.resources
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattooManageApp.csproj.GenerateResource.cache
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattooManageApp.GeneratedMSBuildEditorConfig.editorconfig
 D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattooManageApp.AssemblyInfoInputs.cache
@@ -96,3 +94,5 @@ D:\ProjectPRN\TattoDesign\TattooManageApp\bin\Debug\net7.0-windows\TattooManager
 D:\ProjectPRN\TattoDesign\TattooManageApp\bin\Debug\net7.0-windows\TattooManagerService.pdb
 D:\ProjectPRN\TattoDesign\TattooManageApp\bin\Debug\net7.0-windows\TattooManagerDAO.pdb
 D:\ProjectPRN\TattoDesign\TattooManageApp\bin\Debug\net7.0-windows\TattooManageRepository.pdb
+D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.TattooCart.resources
+D:\ProjectPRN\TattoDesign\TattooManageApp\obj\Debug\net7.0-windows\TattoDesign.TattooimageManager.resources

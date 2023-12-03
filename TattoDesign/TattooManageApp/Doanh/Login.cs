@@ -35,6 +35,7 @@ namespace TattoDesign
                 if (user.RoleId == 1)
                 {
                     Admin admin = new Admin();
+                    admin.username.Text = txtusername.Text;
                     admin.Show();
                     this.Hide();
                 }

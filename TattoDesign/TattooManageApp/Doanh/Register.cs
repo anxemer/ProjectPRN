@@ -38,7 +38,7 @@ namespace TattoDesign
             else
             {
                 userService.addUser(user);
-                MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Login login = new Login();
                 login.ShowDialog();
                 this.Hide();

@@ -64,7 +64,7 @@
     <Compile Update="Long\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Long\BookingManager.cs">
+    <Compile Update="Long\TattooimageManager.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Long\StaffManager.cs">
@@ -73,13 +73,13 @@
     <Compile Update="Long\TattooManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MinhHien\Order.cs">
+    <Compile Update="Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MinhHien\OrderDetails.cs">
+    <Compile Update="OrderDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MinhHien\Staff.cs">
+    <Compile Update="AnXemer\TattooCart.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffInfo));
             panel1 = new Panel();
+            txtuser = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panel2 = new Panel();
@@ -52,6 +53,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.Controls.Add(txtuser);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
@@ -60,6 +62,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1262, 91);
             panel1.TabIndex = 2;
+            // 
+            // txtuser
+            // 
+            txtuser.AutoSize = true;
+            txtuser.Location = new Point(3, 9);
+            txtuser.Name = "txtuser";
+            txtuser.Size = new Size(50, 20);
+            txtuser.TabIndex = 13;
+            txtuser.Text = "label6";
+            txtuser.Visible = false;
             // 
             // pictureBox1
             // 
@@ -180,6 +192,7 @@
             button1.TabIndex = 2;
             button1.Text = "Book";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // tattooimage
             // 
@@ -228,5 +241,6 @@
         private Button button1;
         private PictureBox tattooimage;
         private Label txtdesctip;
+        public Label txtuser;
     }
 }

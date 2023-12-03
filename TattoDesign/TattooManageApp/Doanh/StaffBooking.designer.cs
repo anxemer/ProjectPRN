@@ -51,6 +51,7 @@
             panel2 = new Panel();
             lvstaff = new ListView();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            txtusn = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -125,6 +126,7 @@
             btnBooking.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnBooking.Size = new Size(60, 75);
             btnBooking.TabIndex = 4;
+            btnBooking.Click += btnBooking_Click;
             // 
             // label4
             // 
@@ -182,6 +184,7 @@
             btmHomePage.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btmHomePage.Size = new Size(60, 75);
             btmHomePage.TabIndex = 7;
+            btmHomePage.Click += btmHomePage_Click;
             // 
             // label2
             // 
@@ -210,6 +213,7 @@
             btnTattoo.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnTattoo.Size = new Size(60, 75);
             btnTattoo.TabIndex = 6;
+            btnTattoo.Click += btnTattoo_Click;
             // 
             // staffimage
             // 
@@ -262,11 +266,22 @@
             txtSearch.Size = new Size(352, 61);
             txtSearch.TabIndex = 3;
             // 
+            // txtusn
+            // 
+            txtusn.AutoSize = true;
+            txtusn.Location = new Point(12, 125);
+            txtusn.Name = "txtusn";
+            txtusn.Size = new Size(50, 20);
+            txtusn.TabIndex = 4;
+            txtusn.Text = "label6";
+            txtusn.Visible = false;
+            // 
             // staffbooking
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1262, 941);
+            Controls.Add(txtusn);
             Controls.Add(txtSearch);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -279,6 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -298,5 +314,6 @@
         private Panel panel2;
         private ListView lvstaff;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
+        public Label txtusn;
     }
 }

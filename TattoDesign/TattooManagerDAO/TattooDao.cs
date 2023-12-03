@@ -43,6 +43,42 @@ namespace TattooManagerDAO
             var dbContext = new TattooshopContext();
             return dbContext.TattooImgs.Where(t => t.CateId == cateid).ToList();
         }
+        public void AddTattoo(TattooImg newtattoo)
+        {
+            try
+            {
+                var dbcontext = new TattooshopContext();
+                dbcontext.TattooImgs.Add(newtattoo);
+                dbcontext.SaveChanges();
+            }
+            catch (Exception ex) { throw new Exception(ex.Message); }
 
+        }
+        public void DeleteTattoo(int id)
+        {
+            try
+            {
+                var dbcontext = new TattooshopContext();
+                TattooImg tattoo = GetTattooImgsById(id);
+                dbcontext.TattooImgs.Remove(tattoo);
+                dbcontext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+        public void updateTattoo(TattooImg upTattoo, int id)
+        {
+            var dbcontext = new TattooshopContext();
+            TattooImg tattoo = GetTattooImgsById(id);
+            if (tattoo != null)
+            {
+                dbcontext.TattooImgs.Update(tattoo);
+                dbcontext.SaveChanges();
+            }
+
+        }
     }
 }

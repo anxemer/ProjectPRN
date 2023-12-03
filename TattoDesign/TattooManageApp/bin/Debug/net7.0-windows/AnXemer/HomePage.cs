@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TattoDesign.AnXemer;
+using TattooManagerObject.Models;
 
 namespace TattoDesign
 {
@@ -29,6 +30,23 @@ namespace TattoDesign
         private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnartist_Click(object sender, EventArgs e)
+        {
+            staffbooking staffbooking = new staffbooking();
+            staffbooking.Show();
+            staffbooking.txtusn.Text = txtusername.Text;
+            this.Hide();
+
+        }
+
+        private void btnbooking_Click(object sender, EventArgs e)
+        {
+            TattooCart tattooCart = new TattooCart();
+            tattooCart.txtusername.Text = txtusername.Text;
+            tattooCart.Show();
+            this.Hide();
         }
     }
 }

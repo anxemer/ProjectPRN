@@ -30,13 +30,14 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TattoShopping));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
+            txtusername = new Label();
             label5 = new Label();
             label1 = new Label();
             btnBooking = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -64,7 +65,6 @@
             btnMinhHoa = new Button();
             txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             btnall = new Button();
-            txtusername = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -91,6 +91,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1262, 116);
             panel1.TabIndex = 0;
+            // 
+            // txtusername
+            // 
+            txtusername.AutoSize = true;
+            txtusername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtusername.Location = new Point(376, 41);
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(70, 28);
+            txtusername.TabIndex = 12;
+            txtusername.Text = "label6";
             // 
             // label5
             // 
@@ -126,9 +136,10 @@
             btnBooking.Margin = new Padding(3, 4, 3, 4);
             btnBooking.Name = "btnBooking";
             btnBooking.PressedState.ImageSize = new Size(64, 64);
-            btnBooking.ShadowDecoration.CustomizableEdges = customizableEdges7;
+            btnBooking.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnBooking.Size = new Size(60, 75);
             btnBooking.TabIndex = 4;
+            btnBooking.Click += btnBooking_Click;
             // 
             // label4
             // 
@@ -165,9 +176,10 @@
             btnArtists.Margin = new Padding(3, 4, 3, 4);
             btnArtists.Name = "btnArtists";
             btnArtists.PressedState.ImageSize = new Size(64, 64);
-            btnArtists.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnArtists.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnArtists.Size = new Size(60, 75);
             btnArtists.TabIndex = 5;
+            btnArtists.Click += btnArtists_Click;
             // 
             // btmHomePage
             // 
@@ -182,7 +194,7 @@
             btmHomePage.Margin = new Padding(3, 4, 3, 4);
             btmHomePage.Name = "btmHomePage";
             btmHomePage.PressedState.ImageSize = new Size(64, 64);
-            btmHomePage.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            btmHomePage.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btmHomePage.Size = new Size(60, 75);
             btmHomePage.TabIndex = 7;
             btmHomePage.Click += btmHomePage_Click;
@@ -212,7 +224,7 @@
             btnTattoo.Margin = new Padding(3, 4, 3, 4);
             btnTattoo.Name = "btnTattoo";
             btnTattoo.PressedState.ImageSize = new Size(64, 64);
-            btnTattoo.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnTattoo.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnTattoo.Size = new Size(60, 75);
             btnTattoo.TabIndex = 6;
             // 
@@ -419,7 +431,7 @@
             txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             txtSearch.BorderRadius = 20;
             txtSearch.Cursor = Cursors.IBeam;
-            txtSearch.CustomizableEdges = customizableEdges11;
+            txtSearch.CustomizableEdges = customizableEdges5;
             txtSearch.DefaultText = "";
             txtSearch.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSearch.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -436,7 +448,7 @@
             txtSearch.PasswordChar = '\0';
             txtSearch.PlaceholderText = "SEARCH";
             txtSearch.SelectedText = "";
-            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtSearch.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtSearch.Size = new Size(352, 61);
             txtSearch.TabIndex = 2;
             txtSearch.TextChanged += txtSearch_TextChanged;
@@ -453,16 +465,6 @@
             btnall.Text = "Tất cả";
             btnall.UseVisualStyleBackColor = true;
             btnall.Click += btnall_Click;
-            // 
-            // txtusername
-            // 
-            txtusername.AutoSize = true;
-            txtusername.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            txtusername.Location = new Point(376, 41);
-            txtusername.Name = "txtusername";
-            txtusername.Size = new Size(70, 28);
-            txtusername.TabIndex = 12;
-            txtusername.Text = "label6";
             // 
             // TattoShopping
             // 

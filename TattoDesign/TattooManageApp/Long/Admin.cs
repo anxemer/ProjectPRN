@@ -36,5 +36,18 @@ namespace TattoDesign
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            TattooimageManager tattooimageManager = new TattooimageManager();
+            tattooimageManager.username.Text = username.Text;
+            tattooimageManager.Show();
+            this.Hide();
+        }
+
+        private void Admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

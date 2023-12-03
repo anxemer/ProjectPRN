@@ -7,7 +7,7 @@ CREATE DATABASE tattooshop;
 USE tattooshop;
 
 CREATE TABLE [User] (
-    useriId INT identity (1,1) PRIMARY KEY,
+    id INT identity (1,1) PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     password varchar(64) NOT NULL,
     email VARCHAR(255),
@@ -24,7 +24,7 @@ CREATE TABLE [role] (
 
 
 CREATE TABLE artist (
-    staffId INT identity (1,1) PRIMARY KEY,
+    id INT identity (1,1) PRIMARY KEY,
     namestaff nvarchar(255),
     information NVARCHAR(1000),
     experience NVARCHAR(255),
@@ -32,12 +32,6 @@ CREATE TABLE artist (
 );
 
 
-CREATE TABLE [Order] (
-    id INT identity (1,1) PRIMARY KEY,
-    price DECIMAL(10, 2) NOT NULL,
-    [date] DATE,
-    [useriId] INT
-);
 
 
 CREATE TABLE [Category_tattoo] (
@@ -55,43 +49,67 @@ CREATE TABLE [tattoo_img]  (
     price DECIMAL(10, 2) NOT NULL,
     cateId INT,
 );
+--CREATE TABLE Cart (
+--    CartId INT IDENTITY(1,1) PRIMARY KEY,
+--    UserId INT NOT NULL,
+--    DateCreated DATETIME NOT NULL,
+--    FOREIGN KEY (UserId) REFERENCES [User](useriId)
+--);
+--CREATE TABLE CartItem (
+--    CartItemId INT IDENTITY(1,1) PRIMARY KEY,
+--    CartId INT NOT NULL,
+--    tattooId INT NOT NULL,
+--    Quantity INT NOT NULL,
+--    FOREIGN KEY (CartId) REFERENCES Cart(CartId),
+--    FOREIGN KEY (tattooId) REFERENCES tattoo_img(id)
+--);
+--CREATE TABLE [Order] (
+--    OrderId INT IDENTITY(1,1) PRIMARY KEY,
+--    UserId INT NOT NULL,
+--    OrderDate DATETIME NOT NULL,
+--    TotalAmount DECIMAL(18, 2) NOT NULL,
+--    FOREIGN KEY (UserId) REFERENCES [User](useriId)
+--);
+
+--CREATE TABLE OrderDetail (
+--    OrderDetailId INT IDENTITY(1,1) PRIMARY KEY,
+--    OrderId INT NOT NULL,
+--    tattooId INT NOT NULL,
+--    Quantity INT NOT NULL,
+--    Price DECIMAL(18, 2) NOT NULL,
+--    FOREIGN KEY (OrderId) REFERENCES [Order](OrderId),
+--    FOREIGN KEY (tattooId) REFERENCES tattoo_img(id)
+--);
 CREATE TABLE Cart (
-    CartId INT IDENTITY(1,1) PRIMARY KEY,
-    UserId INT NOT NULL,
-    DateCreated DATETIME NOT NULL,
-    FOREIGN KEY (UserId) REFERENCES [User](useriId)
+    CartID INT PRIMARY KEY IDENTITY,
+    UserID INT NOT NULL,
+    TattooID INT NOT NULL,
+    Quantity INT DEFAULT 1,
+    DateAdded DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UserID) REFERENCES [User](id),
+    FOREIGN KEY (TattooID) REFERENCES tattoo_img(id)
 );
-CREATE TABLE CartItem (
-    CartItemId INT IDENTITY(1,1) PRIMARY KEY,
-    CartId INT NOT NULL,
-    tattooId INT NOT NULL,
-    Quantity INT NOT NULL,
-    FOREIGN KEY (CartId) REFERENCES Cart(CartId),
-    FOREIGN KEY (tattooId) REFERENCES tattoo_img(id)
-);
+
 CREATE TABLE [Order] (
-    OrderId INT IDENTITY(1,1) PRIMARY KEY,
-    UserId INT NOT NULL,
-    OrderDate DATETIME NOT NULL,
-    TotalAmount DECIMAL(18, 2) NOT NULL,
-    FOREIGN KEY (UserId) REFERENCES [User](useriId)
+    id INT PRIMARY KEY IDENTITY,
+    UserID INT NOT NULL,
+    OrderDate DATETIME DEFAULT GETDATE(),
+    ArtistID INT NOT NULL,
+    TotalPrice DECIMAL(10, 2),
+    Status NVARCHAR(50),
+    FOREIGN KEY (UserID) REFERENCES [User](id),
+    FOREIGN KEY (ArtistID) REFERENCES Artist(id)
 );
 
 CREATE TABLE OrderDetail (
-    OrderDetailId INT IDENTITY(1,1) PRIMARY KEY,
-    OrderId INT NOT NULL,
-    tattooId INT NOT NULL,
-    Quantity INT NOT NULL,
-    Price DECIMAL(18, 2) NOT NULL,
-    FOREIGN KEY (OrderId) REFERENCES [Order](OrderId),
-    FOREIGN KEY (tattooId) REFERENCES tattoo_img(id)
+    OrderDetailID INT PRIMARY KEY IDENTITY,
+    OrderID INT NOT NULL,
+    TattooID INT NOT NULL,	
+    Price DECIMAL(10, 2),
+    Quantity INT DEFAULT 1,
+    FOREIGN KEY (OrderID) REFERENCES [Order](id),
+    FOREIGN KEY (TattooID) REFERENCES tattoo_img(id)
 );
-
-
-
-
-
-
 
 
 ALTER TABLE [User]
@@ -103,17 +121,6 @@ ALTER TABLE [tattoo_img]
 ADD CONSTRAINT FK_tattooImg_tattooCategory
 FOREIGN KEY (cateId) REFERENCES [category_tattoo](id);
 
-ALTER TABLE [Order_details]
-ADD CONSTRAINT FK_orderDetails_order
-FOREIGN KEY (orderId) REFERENCES [order](id);
-
-ALTER TABLE [Order_details]
-ADD CONSTRAINT FK_orderDetails_tattooImg
-FOREIGN KEY (tattooimgId) REFERENCES [tattoo_img](id);
-
-ALTER TABLE [Order_details]
-ADD CONSTRAINT FK_orderDetails_staff
-FOREIGN KEY (staffId) REFERENCES artist(staffId);
 
 
 -- Insert data

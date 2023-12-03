@@ -5,10 +5,9 @@
     "\\TattooManageApp\\AnXemer",
     "\\TattooManageApp\\Doanh",
     "\\TattooManageApp\\Long",
-    "\\TattooManageApp\\MinhHien",
     "\\TattooManagerDAO",
     "\\TattooManagerObject"
   ],
-  "SelectedNode": "\\TattooManageApp\\Doanh\\StaffBooking.cs",
+  "SelectedNode": "\\TattooManageApp\\AnXemer\\TattooCart.cs",
   "PreviewInSolutionExplorer": false
 }

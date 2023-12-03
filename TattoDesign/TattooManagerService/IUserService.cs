@@ -9,7 +9,7 @@ namespace TattooManagerService
 {
     public interface IUserService
     {
-        User getUser(String username);
+        User getUser(string username);
 
         void addUser(User user);
     }

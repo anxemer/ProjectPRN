@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TattooDetail));
             panel1 = new Panel();
+            txtusername = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panel2 = new Panel();
@@ -42,7 +43,6 @@
             label8 = new Label();
             button1 = new Button();
             tattooimage = new PictureBox();
-            txtusername = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -62,6 +62,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1262, 116);
             panel1.TabIndex = 1;
+            // 
+            // txtusername
+            // 
+            txtusername.AutoSize = true;
+            txtusername.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtusername.Location = new Point(22, 34);
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(79, 31);
+            txtusername.TabIndex = 13;
+            txtusername.Text = "label2";
             // 
             // pictureBox1
             // 
@@ -182,6 +192,7 @@
             button1.TabIndex = 2;
             button1.Text = "Book";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // tattooimage
             // 
@@ -192,16 +203,6 @@
             tattooimage.SizeMode = PictureBoxSizeMode.StretchImage;
             tattooimage.TabIndex = 0;
             tattooimage.TabStop = false;
-            // 
-            // txtusername
-            // 
-            txtusername.AutoSize = true;
-            txtusername.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtusername.Location = new Point(22, 34);
-            txtusername.Name = "txtusername";
-            txtusername.Size = new Size(79, 31);
-            txtusername.TabIndex = 13;
-            txtusername.Text = "label2";
             // 
             // TattooDetail
             // 

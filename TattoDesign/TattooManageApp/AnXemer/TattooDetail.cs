@@ -15,10 +15,14 @@ namespace TattoDesign.AnXemer
     public partial class TattooDetail : Form
     {
         private ITattoService tattoService;
+        private IUserService userService;
+        private ICartService cartService;
         private int tattooId;
         public TattooDetail(int id)
         {
+            userService = new UserService();
             tattoService = new TattooService();
+            cartService = new CartService();
             InitializeComponent();
             tattooId = id;
             loadTattooDetail(id);
@@ -50,8 +54,13 @@ namespace TattoDesign.AnXemer
 
                 tattooimage.Image = null;
             }
+        }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+          User user =  userService.getUser(txtusername.Text);
+            cartService.addCart(user.Id, tattooId);
+            MessageBox.Show("Bạn đã chọn được 1 hình đẹp đấy, giờ hãy vào 'Booking' để xem các cảnh bạn đã chọn và chọn 1 Artist để xăm cho bạn đi nào !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

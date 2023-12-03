@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             label5 = new Label();
             label4 = new Label();
@@ -44,6 +44,7 @@
             btnhome = new Guna.UI2.WinForms.Guna2ImageButton();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            txtusername = new Label();
             label1 = new Label();
             panel3 = new Panel();
             pictureBox4 = new PictureBox();
@@ -52,7 +53,6 @@
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox2 = new PictureBox();
-            txtusername = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -140,9 +140,10 @@
             btnbooking.Margin = new Padding(3, 4, 3, 4);
             btnbooking.Name = "btnbooking";
             btnbooking.PressedState.ImageSize = new Size(64, 64);
-            btnbooking.ShadowDecoration.CustomizableEdges = customizableEdges9;
+            btnbooking.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnbooking.Size = new Size(89, 96);
             btnbooking.TabIndex = 2;
+            btnbooking.Click += btnbooking_Click;
             // 
             // btnartist
             // 
@@ -156,9 +157,10 @@
             btnartist.Margin = new Padding(3, 4, 3, 4);
             btnartist.Name = "btnartist";
             btnartist.PressedState.ImageSize = new Size(64, 64);
-            btnartist.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnartist.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnartist.Size = new Size(89, 96);
             btnartist.TabIndex = 2;
+            btnartist.Click += btnartist_Click;
             // 
             // btntatto
             // 
@@ -172,7 +174,7 @@
             btntatto.Margin = new Padding(3, 4, 3, 4);
             btntatto.Name = "btntatto";
             btntatto.PressedState.ImageSize = new Size(64, 64);
-            btntatto.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            btntatto.ShadowDecoration.CustomizableEdges = customizableEdges3;
             btntatto.Size = new Size(89, 96);
             btntatto.TabIndex = 2;
             btntatto.Click += btntatto_Click;
@@ -180,6 +182,7 @@
             // btnhome
             // 
             btnhome.CheckedState.ImageSize = new Size(64, 64);
+            btnhome.Enabled = false;
             btnhome.HoverState.Image = (Image)resources.GetObject("resource.Image3");
             btnhome.HoverState.ImageSize = new Size(64, 64);
             btnhome.Image = (Image)resources.GetObject("btnhome.Image");
@@ -189,7 +192,7 @@
             btnhome.Margin = new Padding(3, 4, 3, 4);
             btnhome.Name = "btnhome";
             btnhome.PressedState.ImageSize = new Size(64, 64);
-            btnhome.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnhome.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnhome.Size = new Size(89, 96);
             btnhome.TabIndex = 2;
             // 
@@ -213,8 +216,18 @@
             panel2.Location = new Point(172, 0);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1078, 88);
+            panel2.Size = new Size(613, 88);
             panel2.TabIndex = 1;
+            // 
+            // txtusername
+            // 
+            txtusername.AutoSize = true;
+            txtusername.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            txtusername.ForeColor = SystemColors.ControlText;
+            txtusername.Location = new Point(405, 36);
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(0, 31);
+            txtusername.TabIndex = 1;
             // 
             // label1
             // 
@@ -300,16 +313,6 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
-            // 
-            // txtusername
-            // 
-            txtusername.AutoSize = true;
-            txtusername.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            txtusername.ForeColor = SystemColors.ControlText;
-            txtusername.Location = new Point(405, 36);
-            txtusername.Name = "txtusername";
-            txtusername.Size = new Size(0, 31);
-            txtusername.TabIndex = 1;
             // 
             // HomePage
             // 

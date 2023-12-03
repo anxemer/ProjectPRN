@@ -17,9 +17,11 @@ namespace TattoDesign.AnXemer
     public partial class TattoShopping : Form
     {
         private ITattoService tattoService;
+        private IUserService userService;
         public TattoShopping()
         {
             tattoService = new TattooService();
+            userService = new UserService();
             InitializeComponent();
             LoadImageTattoo();
         }
@@ -318,8 +320,8 @@ namespace TattoDesign.AnXemer
         private void btmHomePage_Click(object sender, EventArgs e)
         {
             HomePage homePage = new HomePage();
-            homePage.ShowDialog();
-            this.Dispose();
+            homePage.Show();
+            this.Hide();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -370,6 +372,22 @@ namespace TattoDesign.AnXemer
         private void TattoShopping_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            TattooCart cart = new TattooCart();
+            cart.txtusername.Text = txtusername.Text;
+            cart.Show();
+            this.Hide();
+        }
+
+        private void btnArtists_Click(object sender, EventArgs e)
+        {
+            staffbooking staffbooking = new staffbooking();
+            staffbooking.Show();
+            staffbooking.txtusn.Text = txtusername.Text;
+            this.Hide();
         }
     }
 }

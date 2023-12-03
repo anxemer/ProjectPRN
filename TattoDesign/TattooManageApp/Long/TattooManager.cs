@@ -46,5 +46,10 @@ namespace TattoDesign
         {
 
         }
+
+        private void TattooManager_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

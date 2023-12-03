@@ -66,12 +66,36 @@ namespace TattoDesign
             int tattooId = int.Parse(imageId);
 
             StaffInfo staffInfo = new StaffInfo(tattooId);
-            staffInfo.Show();
+            staffInfo.txtuser.Text = txtusn.Text;
+            staffInfo.ShowDialog();
         }
 
         private void staffbooking_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btmHomePage_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void btnTattoo_Click(object sender, EventArgs e)
+        {
+            TattoShopping tatto = new TattoShopping();
+            tatto.txtusername.Text = txtusn.Text;
+            tatto.Show();
+            this.Hide();
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            TattooCart tattooCart = new TattooCart();
+            tattooCart.txtusername.Text = txtusn.Text;
+            tattooCart.Show();
+            this.Hide();
         }
     }
 
